@@ -1,11 +1,8 @@
 
 var getWords = function(titles){
-
-	// -----------------------------------
-	//  YOUR CODE
-	//  Filter out punctuation/numbers
-	//  Return words array
-	// -----------------------------------	
+	var words = titles.map(function(title){
+		return title.toLowerCase().match(/([a-z]+)/g)
+	});
 
 	return words;
 }
